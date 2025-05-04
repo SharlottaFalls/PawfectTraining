@@ -83,7 +83,7 @@ body {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+                url('dog_pics/IMG_6251.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -442,7 +442,7 @@ body {
 .ready {
     padding: 5rem 1rem;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('https://images.unsplash.com/photo-1541599188900-6d85bf6b5df3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+                url('dog_pics/IMG_4450.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -603,6 +603,33 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1rem;
+    }
+    
+    .logo-main, .logo-divider, .logo-phone {
+        margin-bottom: 0.2rem; /* Allow clean wrapping */
+    }
+    
+    .logo-phone {
+        font-size: 75%;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .services-grid,
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-height: 500px) and (orientation: landscape) {
     #contact .contact-container .contact-qr-inline {
         display: inline-flex !important;
@@ -710,33 +737,6 @@ body {
     
     .qr-code {
         max-width: 120px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        font-size: 1rem;
-    }
-    
-    .logo-main, .logo-divider, .logo-phone {
-        margin-bottom: 0.2rem; /* Allow clean wrapping */
-    }
-    
-    .logo-phone {
-        font-size: 75%;
-    }
-    
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    .tagline {
-        font-size: 1rem;
-    }
-    
-    .services-grid,
-    .pricing-grid {
-        grid-template-columns: 1fr;
     }
 }
 
